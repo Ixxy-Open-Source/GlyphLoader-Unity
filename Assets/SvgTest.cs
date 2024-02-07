@@ -1,11 +1,5 @@
-using System;
-using System.IO;
-using System.Linq;
 using Unity.VectorGraphics;
 using UnityEngine;
-using UnityEngine.ProBuilder;
-using UnityEngine.ProBuilder.MeshOperations;
-using WaterTrans.GlyphLoader;
 
 public class SvgTest : MonoBehaviour
 {
