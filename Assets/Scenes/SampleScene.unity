@@ -663,7 +663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1194101006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -956,12 +956,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad3a5cc6ae8d465dae9bac8f27341aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  element: 1
-  childElement: 0
+  Id: 
+  element: 0
+  childElement: -1
   translation: {x: 0, y: 0, z: 0}
   rotation: {x: -0, y: 0, z: 0}
   scale: {x: 1, y: -1, z: 1}
-  translateEach: {x: 0, y: 0, z: 0.2}
+  translateEach: {x: 0, y: 0, z: 0}
   rotateEach: {x: 0, y: 0, z: 0}
   scaleEach: {x: 1, y: 1, z: 1}
   rawSvg: "<svg height=\"128\" width=\"128\" xmlns=\"http://www.w3.org/2000/svg\">\n 
