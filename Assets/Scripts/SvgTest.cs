@@ -4,17 +4,16 @@ using UnityEngine;
 public class SvgTest : MonoBehaviour
 {
     public string Id;
-    public int element = 0;
-    public int childElement = 0;
+    public int element = -1;
+    public int childElement = -1;
     public Vector3 translation = Vector3.zero;
     public Vector3 rotation = Vector3.zero;
     public Vector3 scale = new (1, -1, 1);
 
     public Vector3 translateEach = Vector3.zero;
     public Vector3 rotateEach = Vector3.zero;
-    public Vector3 scaleEach = new (1, -1, 1);
-
-
+    public Vector3 scaleEach = new (1, 1, 1);
+    
     [Multiline(16)]
     public string rawSvg;
 
@@ -27,7 +26,6 @@ public class SvgTest : MonoBehaviour
     {
         return $"{node.Children?.Count ?? 0} children. {node.Shapes?.Count ?? 0} shapes.";
     }
-
 
     [ContextMenu("Generate")]
     void Generate()

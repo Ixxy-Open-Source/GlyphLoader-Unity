@@ -381,6 +381,114 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &757219963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 757219967}
+  - component: {fileID: 757219966}
+  - component: {fileID: 757219965}
+  - component: {fileID: 757219964}
+  m_Layer: 0
+  m_Name: Glyph Loader Complex Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &757219964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757219963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec7f7fbebf04544bc71e554085102d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fontPath: Assets/Resources/CALIBRI.TTF
+  text: Hello
+  color: {r: 1, g: 1, b: 1, a: 1}
+  Id: 
+  element: -1
+  childElement: -1
+  translation: {x: 0, y: 0, z: 0}
+  rotation: {x: -0, y: 0, z: 0}
+  scale: {x: 1, y: -1, z: 1}
+  translateEach: {x: 0, y: 0, z: 0}
+  rotateEach: {x: 0, y: 0, z: 0}
+  scaleEach: {x: 1, y: 1, z: 1}
+--- !u!23 &757219965
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757219963}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 73ddb2958e9cd451c82f37c26efa5eb0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &757219966
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757219963}
+  m_Mesh: {fileID: 0}
+--- !u!4 &757219967
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757219963}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &777710457
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,7 +655,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &777710463
 MonoBehaviour:
@@ -658,12 +766,12 @@ GameObject:
   - component: {fileID: 1194101008}
   - component: {fileID: 1194101006}
   m_Layer: 0
-  m_Name: Glyph Loader Test
+  m_Name: Glyph Loader Simple Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1194101006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -682,20 +790,6 @@ MonoBehaviour:
   translation: {x: 0, y: 0, z: 0}
   rotation: {x: -0, y: 0, z: 0}
   scale: {x: 1, y: -1, z: 1}
-  rawSvg: "<svg height=\"128\" width=\"128\" xmlns=\"http://www.w3.org/2000/svg\">\n 
-    <rect id=\"rectangle\"  x=\"2\" y=\"2\" width=\"124\" height=\"124\" rx=\"14\"
-    fill=\"#363d52\" stroke=\"#212532\" stroke-width=\"4\"/>\n  <g id=\"g1\" transform=\"scale(.101)
-    translate(122 122)\">\n    <g fill=\"#fff\">\n      <path d=\"M105 673v33q407
-    354 814 0v-33z\"/>\n      <path fill=\"#478cbf\" d=\"m105 673 152 14q12 1 15
-    14l4 67 132 10 8-61q2-11 15-15h162q13 4 15 15l8 61 132-10 4-67q3-13 15-14l152-14V427q30-39
-    56-81-35-59-83-108-43 20-82 47-40-37-88-64 7-51 8-102-59-28-123-42-26 43-46 89-49-7-98
-    0-20-46-46-89-64 14-123 42 1 51 8 102-48 27-88 64-39-27-82-47-48 49-83 108 26
-    42 56 81zm0 33v39c0 276 813 276 813 0v-39l-134 12-5 69q-2 10-14 13l-162 11q-12
-    0-16-11l-10-65H447l-10 65q-4 11-16 11l-162-11q-12-3-14-13l-5-69z\"/>\n      <path
-    d=\"M483 600c3 34 55 34 58 0v-86c-3-34-55-34-58 0z\"/>\n      <circle cx=\"725\"
-    cy=\"526\" r=\"90\"/><circle cx=\"299\" cy=\"526\" r=\"90\"/>\n    </g>\n   
-    <g id=\"g2\" fill=\"#414042\">\n      <circle cx=\"307\" cy=\"532\" r=\"60\"/>\n     
-    <circle cx=\"717\" cy=\"532\" r=\"60\"/>\n    </g>\n</g>\n</svg>\n"
 --- !u!23 &1194101008
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1042,5 +1136,5 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
