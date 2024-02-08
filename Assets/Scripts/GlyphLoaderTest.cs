@@ -13,9 +13,6 @@ public class GlyphLoaderTest : MonoBehaviour
     public Vector3 rotation = Vector3.zero;
     public Vector3 scale = new (1, -1, 1);
 
-    [Multiline(16)]
-    public string rawSvg;
-
     private float unit = 1f;
 
     void Start()

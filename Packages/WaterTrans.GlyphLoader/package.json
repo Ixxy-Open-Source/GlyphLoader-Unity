@@ -1,0 +1,16 @@
+{
+	"name": "com.watertrans.glyphloader",
+	"version": "0.0.1",
+	"displayName": "GlyphLoader",
+	"description": "GlyphLoader is a .NET Standerd library for TrueType, OpenType font. ",
+	"unity": "2021.3",
+	"author": {
+		"name": "Masahisa Kobayashi",
+		"email": "watertrans@gmail.com",
+		"url": "https://github.com/watertrans/GlyphLoader"
+	},
+	"dependencies": {
+	},
+	"scopedRegistries": [
+	]
+}

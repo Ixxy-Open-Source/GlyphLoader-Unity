@@ -18,8 +18,6 @@ public class SvgTest : MonoBehaviour
     [Multiline(16)]
     public string rawSvg;
 
-    private float unit = 1f;
-
     void Start()
     {
         Generate();

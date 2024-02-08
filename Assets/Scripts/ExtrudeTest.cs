@@ -5,7 +5,8 @@ using UnityEngine.ProBuilder.MeshOperations;
 
 public class ExtrudeTest : MonoBehaviour
 {
-    private float unit = 1f;
+
+    // WIP - not currently working
 
     private void CreateProBuilderMesh(Vector3[] verts, Vector3[][] holes, float depth)
     {
