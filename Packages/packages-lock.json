@@ -73,20 +73,9 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-    "com.unity.probuilder": {
-      "version": "5.2.2",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.settings-manager": "1.0.3",
-        "com.unity.modules.physics": "1.0.0",
-        "com.unity.modules.imgui": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
     "com.unity.settings-manager": {
       "version": "1.0.3",
-      "depth": 1,
+      "depth": 2,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -143,9 +132,9 @@
       }
     },
     "com.unity.vectorgraphics": {
-      "version": "git+https://github.com/icosa-mirror/com.unity.vectorgraphics#open-brush",
+      "version": "file:com.unity.vectorgraphics",
       "depth": 0,
-      "source": "git",
+      "source": "embedded",
       "dependencies": {
         "com.unity.2d.sprite": "1.0.0",
         "com.unity.ugui": "1.0.0",
@@ -158,8 +147,7 @@
         "com.unity.modules.unitywebrequest": "1.0.0",
         "com.unity.modules.unitywebrequesttexture": "1.0.0",
         "com.unity.modules.unitywebrequestwww": "1.0.0"
-      },
-      "hash": "efec4474625fa1f9dd67846287ac5dbde52addbb"
+      }
     },
     "com.unity.visualscripting": {
       "version": "1.9.1",
