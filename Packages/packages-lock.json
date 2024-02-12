@@ -132,9 +132,9 @@
       }
     },
     "com.unity.vectorgraphics": {
-      "version": "file:com.unity.vectorgraphics",
+      "version": "git+https://github.com/icosa-mirror/com.unity.vectorgraphics#open-brush",
       "depth": 0,
-      "source": "embedded",
+      "source": "git",
       "dependencies": {
         "com.unity.2d.sprite": "1.0.0",
         "com.unity.ugui": "1.0.0",
@@ -147,7 +147,8 @@
         "com.unity.modules.unitywebrequest": "1.0.0",
         "com.unity.modules.unitywebrequesttexture": "1.0.0",
         "com.unity.modules.unitywebrequestwww": "1.0.0"
-      }
+      },
+      "hash": "feaa5a53c1a420ab52f321f8e5424b13a59b36e3"
     },
     "com.unity.visualscripting": {
       "version": "1.9.1",

@@ -1,0 +1,9 @@
+Available for commercial and personal use.
+
+- Designer @vagaboundd (Ryan Silva)
+
+- 52 characters
+
+- otf file
+
+https://www.behance.net/ryanwrld

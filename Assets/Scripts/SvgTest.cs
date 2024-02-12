@@ -3,9 +3,16 @@ using UnityEngine;
 
 public class SvgTest : MonoBehaviour
 {
+    public float ExtrusionDepth = 0.25f;
+
+    public string svgPath;
+    [Multiline(16)]
+    public string rawSvg;
+
     public string Id;
     public int element = -1;
     public int childElement = -1;
+
     public Vector3 translation = Vector3.zero;
     public Vector3 rotation = Vector3.zero;
     public Vector3 scale = new (1, -1, 1);
@@ -14,8 +21,6 @@ public class SvgTest : MonoBehaviour
     public Vector3 rotateEach = Vector3.zero;
     public Vector3 scaleEach = new (1, 1, 1);
     
-    [Multiline(16)]
-    public string rawSvg;
 
     void Start()
     {
@@ -31,7 +36,16 @@ public class SvgTest : MonoBehaviour
     void Generate()
     {
         var importer = new RuntimeSVGImporter();
-        SVGParser.SceneInfo sceneInfo = importer.ParseToSceneInfo(rawSvg);
+        string svg;
+        if (!string.IsNullOrEmpty(svgPath))
+        {
+            svg = System.IO.File.ReadAllText(svgPath);
+        }
+        else
+        {
+            svg = rawSvg;
+        }
+        SVGParser.SceneInfo sceneInfo = importer.ParseToSceneInfo(svg);
 
         if (!string.IsNullOrEmpty(Id))
         {
@@ -95,7 +109,7 @@ public class SvgTest : MonoBehaviour
             }
 
             var c = new CombineInstance();
-            c.mesh = importer.SceneInfoToMesh(newSceneInfo, tr);
+            c.mesh = importer.SceneInfoToMesh(newSceneInfo, tr, ExtrusionDepth);
             combine[i] = c;
         }
         var mf = gameObject.GetComponent<MeshFilter>();

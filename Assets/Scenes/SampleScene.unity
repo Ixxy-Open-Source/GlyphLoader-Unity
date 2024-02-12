@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e845eb444ee4f78b81c0bc703de33da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontPath: Assets/Resources/CALIBRI.TTF
+  fontPath: Assets/Resources/Utopia Font.otf
   text: Hello
   color: {r: 0.4627451, g: 0.6117647, b: 0.8117647, a: 1}
   ExtrusionDepth: 0.25
@@ -224,7 +224,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -530,7 +530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1194101006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -645,15 +645,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad3a5cc6ae8d465dae9bac8f27341aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Id: 
-  element: -1
-  childElement: -1
-  translation: {x: 0, y: 0, z: 0}
-  rotation: {x: -0, y: 0, z: 0}
-  scale: {x: 1, y: -1, z: 1}
-  translateEach: {x: 0, y: 0, z: 0}
-  rotateEach: {x: 0, y: 0, z: 0}
-  scaleEach: {x: 1, y: 1, z: 1}
+  ExtrusionDepth: 0.25
+  svgPath: 
   rawSvg: "<svg height=\"128\" width=\"128\" xmlns=\"http://www.w3.org/2000/svg\">\n 
     <rect id=\"rectangle\"  x=\"2\" y=\"2\" width=\"124\" height=\"124\" rx=\"14\"
     fill=\"#363d52\" stroke=\"#212532\" stroke-width=\"4\"/>\n  <g id=\"g1\" transform=\"scale(.101)
@@ -668,6 +661,15 @@ MonoBehaviour:
     cy=\"526\" r=\"90\"/><circle cx=\"299\" cy=\"526\" r=\"90\"/>\n    </g>\n   
     <g id=\"g2\" fill=\"#414042\">\n      <circle cx=\"307\" cy=\"532\" r=\"60\"/>\n     
     <circle cx=\"717\" cy=\"532\" r=\"60\"/>\n    </g>\n</g>\n</svg>\n"
+  Id: 
+  element: -1
+  childElement: -1
+  translation: {x: 0, y: 0, z: 0}
+  rotation: {x: -0, y: 0, z: 0}
+  scale: {x: 1, y: -1, z: 1}
+  translateEach: {x: 0, y: 0, z: 0}
+  rotateEach: {x: 0, y: 0, z: 0}
+  scaleEach: {x: 1, y: 1, z: 1}
 --- !u!23 &2046946443
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -731,5 +733,113 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2623504265159920232
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2623504265159920237}
+  m_Mesh: {fileID: 0}
+--- !u!4 &2623504265159920233
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2623504265159920237}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2623504265159920237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2623504265159920233}
+  - component: {fileID: 2623504265159920232}
+  - component: {fileID: 2623504265159920239}
+  - component: {fileID: 2623504265159920238}
+  m_Layer: 0
+  m_Name: SVG Extrusion Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &2623504265159920238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2623504265159920237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3a5cc6ae8d465dae9bac8f27341aab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExtrusionDepth: 80
+  svgPath: Assets/Resources/OpenBrush Logo Color.svg
+  rawSvg: 
+  Id: Warstwa_1
+  element: -1
+  childElement: -1
+  translation: {x: 0, y: 0, z: 0}
+  rotation: {x: -0, y: 0, z: 0}
+  scale: {x: 1, y: -1, z: 1}
+  translateEach: {x: 0, y: 0, z: -8}
+  rotateEach: {x: 0, y: 0, z: 0}
+  scaleEach: {x: 1, y: 1, z: 1}
+--- !u!23 &2623504265159920239
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2623504265159920237}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b5f1799e9180c164dacd089c250950a7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
