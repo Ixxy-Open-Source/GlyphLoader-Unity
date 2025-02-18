@@ -2,11 +2,11 @@
   "dependencies": {
     "com.unity.collab-proxy": "2.2.0",
     "com.unity.feature.development": "1.0.1",
-    "com.unity.textmeshpro": "3.0.7",
+    "com.unity.ide.rider": "3.0.34",
+    "com.unity.textmeshpro": "3.0.9",
     "com.unity.timeline": "1.7.6",
     "com.unity.ugui": "1.0.0",
     "com.unity.vectorgraphics": "git+https://github.com/icosa-mirror/com.unity.vectorgraphics#open-brush",
-    "com.unity.visualscripting": "1.9.1",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
